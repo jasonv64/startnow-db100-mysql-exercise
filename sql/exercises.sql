@@ -77,7 +77,7 @@ SELECT
     amount,
     payment_date
 FROM payment
-WHERE payment_date BETWEEN '2005-05-27 00:00:00' AND '2005-05-27 23:59:59';
+WHERE DATE(payment_date) BETWEEN '2005-05-27' AND '2005-05-27';
 
 # 3d. Select all columns from the customer table for rows that have a last name beginning with "S" and a first name ending with "N".
 SELECT *
